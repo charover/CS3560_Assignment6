@@ -1,13 +1,20 @@
-// Brock Ferrell
-// CS2401
-// November 23, 2015
-// Project7
+// @file Othello.cc
+// @author Brock Ferrell
+// @brief Othello class that is used with the game.cc
+
+
 
 #include "othello.h"
 
 namespace main_savitch_14
 {
-
+/*
+@param none
+@brief this function checks every squre on the board and outputs it to the terminal based on
+@brief the color the tile is
+@see is_black(), is_white()
+@return void
+*/
 void Othello::display_status()const
 {
   cout << BLUE << "   _______ _______ _______ _______ _______ _______ _______ _______\n";

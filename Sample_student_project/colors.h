@@ -1,9 +1,9 @@
 //***********************************************************
 //
-//  File:     colors.h
+//  @file     colors.h
 //
-//  Author:   Matthew Beldyk
-//  Email:    mb245002@ohiou.edu
+// @author:   Matthew Beldyk
+// @breif Email:    mb245002@ohiou.edu
 //
 //  Usage:    I created this file to house some names string
 //            constants with escape codes for colors in them
@@ -60,4 +60,3 @@ const string B_CYAN    = "\e[46m";
 const string B_WHITE   = "\e[47m";
 
 #endif //COLORS_H
-

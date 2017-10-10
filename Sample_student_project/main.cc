@@ -1,7 +1,6 @@
-// Brock Ferrell
-// CS2401
-// November 23, 2015
-// Project7
+//@file Main.cc
+//@author Brock Ferrell
+//@breif main that plays the game
 
 #include "game.h"
 #include "othello.h"

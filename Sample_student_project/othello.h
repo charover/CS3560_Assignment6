@@ -1,4 +1,6 @@
-// Brock Ferrell
+// @file Othello.h
+// @author Brock Ferrell
+// @brief Othello Header function and class definition
 // CS2401
 // November 23, 2015
 // Project7
@@ -46,5 +48,3 @@ private:
 }
 
 #endif
-
-

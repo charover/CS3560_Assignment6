@@ -1,4 +1,7 @@
-// File: game.cxx
+// @file game.cc
+//@author: Brock Farrel
+//@brief This file includes all the files for the game.cc that is used in unison with
+//the Othello class
 
 #include <cassert>    // Provides assert
 #include <climits>    // Provides INT_MAX and INT_MIN
@@ -17,10 +20,14 @@ namespace main_savitch_14
 //*************************************************************************
 // PUBLIC MEMBER FUNCTIONS
 
+/*
+@param void
+@return HUMAN
+@brief The play function should not be overridden. It plays one round of the
+game, with the human player moving first and the computer second.
+The return value is the winner of the game (or NEUTRAL for a tie).
+*/
 game::who game::play( )
-// The play function should not be overridden. It plays one round of the
-// game, with the human player moving first and the computer second.
-// The return value is the winner of the game (or NEUTRAL for a tie).
 {
 	restart( );
 
@@ -44,12 +51,22 @@ game::who game::play( )
 
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
-
+/*
+@param message
+@return void
+@breif Just outputs a message
+*/
 void game::display_message(const string& message) const
 {
 	cout << message;
 }
 
+/*
+@param none
+@return answer
+@brief Gets the user move and returns the value of the answer
+
+*/
 string game::get_user_move( ) const
 {
 	string answer;
@@ -60,6 +77,14 @@ string game::get_user_move( ) const
 	return answer;
 }
 
+/*
+@param none
+@see last_mover()
+@see next_mover()
+@return NEUTRAL
+
+@brief Returns who is winning, or nuetral if no one is moving
+*/
 game::who game::winning()const {
 
 	int value = evaluate();
@@ -171,6 +196,3 @@ void game::make_human_move( ) {
 }
 
 }
-
-
-

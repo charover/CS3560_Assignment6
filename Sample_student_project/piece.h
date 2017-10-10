@@ -1,4 +1,6 @@
-// Brock Ferrell
+// @file Piece.h
+// @author Brock Ferrell
+// @brief defines the piece class, which is used in unison game.cc class.
 // CS2401
 // November 23, 2015
 // Project7
@@ -33,4 +35,3 @@ private:
 };
 
 #endif
-

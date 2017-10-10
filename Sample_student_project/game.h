@@ -1,4 +1,7 @@
-// File: game.h (part of the namespace main_savitch_14)
+// @file:game.h
+// @author Brock Ferrell
+//
+//@breif (part of the namespace main_savitch_14)
 
 
 #ifndef MAIN_SAVITCH_GAME
@@ -85,4 +88,3 @@ private:
 }
 
 #endif
-
