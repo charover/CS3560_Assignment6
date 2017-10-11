@@ -1,5 +1,6 @@
 // @file game.cc
 //@author: Brock Farrel
+//@author: Alya ElGamal
 //@brief This file includes all the files for the game.cc that is used in unison with
 //the Othello class
 
@@ -99,7 +100,6 @@ game::who game::winning()const {
 
 }
 
-//*************************************************************************
 // PRIVATE FUNCTIONS (these are the same for every game)
 
 int game::eval_with_lookahead(int look_ahead, int beat_this)
@@ -183,15 +183,22 @@ void game::make_computer_move( )
 	make_move(best_move);
 }
 
+/**
+@brief: Get's the move from the user
+**/
 void game::make_human_move( ) {
 	string move;
 
+	//gets the move that the user wants to make
 	move = get_user_move( );
+	//checks if the move is legal then displays message if it's an illegal move
 	while (!is_legal(move))
 	{
 		display_message("Illegal move.\n");
+		//gets new move from the user
 		move = get_user_move( );
 	}
+	//makes the legal move that is input by user
 	make_move(move);
 }
 

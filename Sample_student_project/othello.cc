@@ -1,5 +1,8 @@
 // @file Othello.cc
 // @author Brock Ferrell
+//	display_status function
+// @author Alya ElGamal
+//	make_move function
 // @brief Othello class that is used with the game.cc
 
 
@@ -55,6 +58,15 @@ void Othello::display_status()const
   cout << "\nEnter a move in the format(letter,number) (Ex: A3)" << endl;
 }
 
+/**
+//@param: a string move
+//@brief: It sets the board up given the move that the computer or player want to make
+//@see: is_white()
+//@see: is_black()
+//@see: set_black()
+//@see: set_white()
+//@see: make_skips()
+**/
 void Othello::make_move(const string& move) {
 
   int c, r;

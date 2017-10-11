@@ -1,5 +1,6 @@
-// @file:game.h
-// @author Brock Ferrell
+//@file:game.h
+//@author Brock Ferrell
+//@author Alya ElGamal
 //
 //@breif (part of the namespace main_savitch_14)
 
@@ -82,7 +83,9 @@ private:
 
 	// PRIVATE FUNCTIONS (these are the same for every game)
     int eval_with_lookahead(int look_ahead, int beat_this);
+    //function that makes the computers move
     void make_computer_move( );
+    //function that makes the players move
     void make_human_move( );
 };
 }
